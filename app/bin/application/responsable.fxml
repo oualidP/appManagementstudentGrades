@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.responsableController">
+   <children>
+      <Pane id="pane" fx:id="pane_etud" layoutX="113.0" layoutY="48.0" prefHeight="483.0" prefWidth="535.0" stylesheets="@application.css" visible="false">
+         <children>
+            <VBox id="pane1" layoutX="60.0" layoutY="36.0" prefHeight="177.0" prefWidth="124.0" stylesheets="@application.css">
+               <children>
+                  <Label id="label1" prefHeight="27.0" prefWidth="86.0" stylesheets="@application.css" text="Nom" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label1" prefHeight="27.0" prefWidth="85.0" stylesheets="@application.css" text="Prenom" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label1" prefHeight="27.0" prefWidth="85.0" stylesheets="@application.css" text="CNE" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label1" prefHeight="27.0" prefWidth="86.0" stylesheets="@application.css" text="Filiere" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox id="pane2" layoutX="258.0" layoutY="36.0" prefHeight="216.0" prefWidth="218.0" stylesheets="@application.css">
+               <children>
+                  <TextField fx:id="nom_etud" promptText="Saisi le nom de l'etudiant">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="prenom_etud" promptText="Saisi le prenom de l'etudiant">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="id_etud" promptText="Saisi le numero de l'etudiant">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ComboBox fx:id="Filiere_comb" prefHeight="25.0" prefWidth="218.0" promptText="Saisi le filiere de l'etudiant">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <TableView fx:id="tableEtude" layoutX="60.0" layoutY="257.0" onMouseClicked="#selection" prefHeight="163.0" prefWidth="416.0">
+              <columns>
+                <TableColumn fx:id="CNE_Col" prefWidth="122.0" text="CNE" />
+                <TableColumn fx:id="Nom_Col" prefWidth="90.0" text="Nom" />
+                  <TableColumn fx:id="Pren_Col" prefWidth="87.0" text="Prenom" />
+                  <TableColumn fx:id="Filiere_col" prefWidth="116.0" text="Filiere" />
+              </columns>
+            </TableView>
+            <Label id="img" layoutX="501.0" onMouseClicked="#invisible" prefHeight="35.0" prefWidth="34.0" stylesheets="@application.css" />
+            <Button id="btn" layoutX="60.0" layoutY="435.0" mnemonicParsing="false" onAction="#AjouterEtudiant" prefHeight="35.0" prefWidth="180.0" stylesheets="@application.css" text="Ajouter">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="btn" layoutX="296.0" layoutY="435.0" mnemonicParsing="false" onAction="#modifierEtudiant" prefHeight="35.0" prefWidth="180.0" stylesheets="@application.css" text="modifier">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <MenuBar prefHeight="25.0" prefWidth="760.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Etudiant">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ajoutMenuEtud" text="Ajouter les etudiants" />
+                  <MenuItem mnemonicParsing="false" onAction="#affMlistEtud" text="Afficher les listes de les etudiants" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Professeur">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#AjoutMProf" text="ajouter les professeur" />
+                  <MenuItem mnemonicParsing="false" onAction="#afflisteMprof" text="afficher les listes de les professeur" />
+                  <MenuItem mnemonicParsing="false" onAction="#AjouteMmprof" text="ajouter le matiere de le prof" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Matiere">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ajoutMmatiere" text="ajouter les matiere" />
+                  <MenuItem mnemonicParsing="false" onAction="#affichMmatiere" text="afficher les listes de les matiere" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Filiere">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AjoutMFiliere" text="Ajouter les Filiere" />
+                  <MenuItem mnemonicParsing="false" onAction="#affMFiliere" text="afficher les listes de les filiere" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Pane id="pane3" fx:id="pane_listEtud" layoutX="113.0" layoutY="48.0" prefHeight="483.0" prefWidth="535.0" stylesheets="@application.css" visible="false">
+         <children>
+            <VBox id="label1" layoutX="91.0" layoutY="29.0" prefHeight="138.0" prefWidth="133.0" stylesheets="@application.css">
+               <children>
+                  <Label id="pane2" prefHeight="39.0" prefWidth="83.0" stylesheets="@application.css" text="Filiere">
+                     <VBox.margin>
+                        <Insets bottom="7.0" left="10.0" right="10.0" top="7.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="pane2" prefHeight="39.0" prefWidth="81.0" stylesheets="@application.css" text="Semestre">
+                     <VBox.margin>
+                        <Insets bottom="7.0" left="10.0" right="10.0" top="7.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox id="label1" layoutX="259.0" layoutY="29.0" prefHeight="138.0" prefWidth="189.0" stylesheets="@application.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <ComboBox fx:id="comb_Filiere" prefWidth="150.0" promptText="choisir filiere">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="comb_Semstre" prefWidth="150.0" promptText="choisir Semestre">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <Button layoutX="165.0" layoutY="422.0" mnemonicParsing="false" onMouseClicked="#afficherlistEtudiant" prefHeight="35.0" prefWidth="189.0" text="afficher" textFill="#04b24a">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tableEtude1" layoutX="51.0" layoutY="190.0" onMouseClicked="#selection" prefHeight="210.0" prefWidth="416.0">
+               <columns>
+                  <TableColumn fx:id="CNE_Col1" prefWidth="122.0" text="CNE" />
+                  <TableColumn fx:id="Nom_Col1" prefWidth="90.0" text="Nom" />
+                  <TableColumn fx:id="Pren_Col1" prefWidth="87.0" text="Prenom" />
+                  <TableColumn fx:id="Filiere_col1" prefWidth="116.0" text="Filiere" />
+               </columns>
+            </TableView>
+            <Label id="img" layoutX="501.0" layoutY="-3.0" onMouseClicked="#invisible" prefHeight="35.0" prefWidth="34.0" stylesheets="@application.css" />
+         </children>
+      </Pane>
+      <Pane id="paneProf" fx:id="paneajoutP" layoutX="113.0" layoutY="48.0" prefHeight="483.0" prefWidth="535.0" stylesheets="@application.css" visible="false">
+         <children>
+            <VBox id="boxProf" layoutX="78.0" layoutY="30.0" prefHeight="152.0" prefWidth="189.0" stylesheets="@application.css">
+               <children>
+                  <Label id="labelProf" prefHeight="27.0" prefWidth="184.0" stylesheets="@application.css" text="Nom de le professeur" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelProf" prefHeight="27.0" prefWidth="176.0" stylesheets="@application.css" text="Prenom de le professeur" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelProf" prefHeight="27.0" prefWidth="178.0" stylesheets="@application.css" text="CIN" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets top="5.0" />
+               </opaqueInsets>
+            </VBox>
+            <VBox id="boxProf" layoutX="291.0" layoutY="30.0" prefHeight="152.0" prefWidth="204.0" stylesheets="@application.css">
+               <children>
+                  <TextField fx:id="txt_NomProf" promptText="Saisi le nom de le prefesseur">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txt_prenProf" promptText="Saisi le prenom de le professeur">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txt_cinProf" promptText="Saisi le CIN de la professeur">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <TableView fx:id="tableProf" layoutX="78.0" layoutY="195.0" prefHeight="210.0" prefWidth="406.0">
+              <columns>
+                <TableColumn fx:id="col_NomP" prefWidth="107.0" text="Nom" />
+                <TableColumn fx:id="col_prenomP" prefWidth="148.0" text="Prenom" />
+                  <TableColumn fx:id="col_cinP" prefWidth="150.0" text="CIN" />
+              </columns>
+            </TableView>
+            <Button id="btn" layoutX="113.0" layoutY="424.0" mnemonicParsing="false" onAction="#AjoutProfesseur" prefHeight="39.0" prefWidth="141.0" stylesheets="@application.css" text="Ajouter" textFill="#030303">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="btn" layoutX="301.0" layoutY="424.0" mnemonicParsing="false" onAction="#ModifierProfesseur" prefHeight="39.0" prefWidth="149.0" stylesheets="@application.css" text="Modifier" textFill="#030303">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label id="img" layoutX="501.0" onMouseClicked="#invisible" prefHeight="35.0" prefWidth="34.0" stylesheets="@application.css" />
+         </children>
+      </Pane>
+      <Pane id="boxProf" fx:id="paneMprof" layoutX="113.0" layoutY="48.0" prefHeight="483.0" prefWidth="535.0" stylesheets="@application.css" visible="false">
+         <children>
+            <VBox id="btn" layoutX="44.0" layoutY="18.0" prefHeight="159.0" prefWidth="211.0" stylesheets="@application.css">
+               <children>
+                  <Label id="label1" prefHeight="37.0" prefWidth="190.0" stylesheets="@application.css" text="le numero nationale de prof">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label id="label1" prefHeight="37.0" prefWidth="199.0" stylesheets="@application.css" text="Matiere">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="4.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label id="label1" prefHeight="37.0" prefWidth="202.0" stylesheets="@application.css" text="Filiere">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="4.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox id="btn" layoutX="268.0" layoutY="23.0" prefHeight="152.0" prefWidth="230.0" stylesheets="@application.css">
+               <children>
+                  <ComboBox fx:id="comb_cinpm" prefHeight="25.0" prefWidth="214.0" promptText="Choisir CIN de le professeur">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="comb_idmp" prefHeight="25.0" prefWidth="217.0" promptText="Choisir le matiere">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="comb_Fpm" prefHeight="25.0" prefWidth="222.0" promptText="Choisir le Filiere">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <TableView fx:id="tableMPF" layoutX="86.0" layoutY="186.0" onMouseClicked="#selection" prefHeight="200.0" prefWidth="375.0">
+              <columns>
+                <TableColumn fx:id="col_CINPM" prefWidth="107.0" text="CIN" />
+                <TableColumn fx:id="col_MatiereM" prefWidth="147.0" text="Matiere" />
+                  <TableColumn fx:id="col_FilierePM" prefWidth="120.0" text="Filiere" />
+              </columns>
+            </TableView>
+            <Button id="btn" layoutX="297.0" layoutY="415.0" mnemonicParsing="false" onAction="#modifierProfMatiere" prefHeight="39.0" prefWidth="160.0" stylesheets="@application.css" text="Modifier">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="btn" layoutX="95.0" layoutY="416.0" mnemonicParsing="false" onAction="#ajoutermatiereProf" prefHeight="37.0" prefWidth="160.0" stylesheets="@application.css" text="Ajouter">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label id="img" layoutX="504.0" layoutY="1.0" onMouseClicked="#invisible" prefHeight="35.0" prefWidth="34.0" stylesheets="@application.css" />
+         </children>
+      </Pane>
+      <Pane id="pane" fx:id="panelistprof" layoutX="112.0" layoutY="49.0" prefHeight="483.0" prefWidth="535.0" stylesheets="@application.css" visible="false">
+         <children>
+            <Button id="btn" layoutX="148.0" layoutY="131.0" mnemonicParsing="false" onAction="#affProfesseur" prefHeight="39.0" prefWidth="230.0" stylesheets="@application.css" text="afficher les information de le prof">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <TableView fx:id="tableProf1" layoutX="65.0" layoutY="215.0" prefHeight="145.0" prefWidth="406.0">
+               <columns>
+                  <TableColumn fx:id="col_NomP1" prefWidth="109.0" text="Nom" />
+                  <TableColumn fx:id="col_prenomP1" minWidth="0.0" prefWidth="166.0" text="Prenom" />
+                  <TableColumn fx:id="col_cinP1" prefWidth="130.0" text="CIN" />
+               </columns>
+            </TableView>
+            <Label id="img" layoutX="504.0" layoutY="-3.0" onMouseClicked="#invisible" prefHeight="35.0" prefWidth="34.0" stylesheets="@application.css" />
+         </children>
+      </Pane>
+      <Pane id="pane" fx:id="paneMatiere" layoutX="114.0" layoutY="49.0" prefHeight="483.0" prefWidth="535.0" stylesheets="@application.css" visible="false">
+         <children>
+            <VBox id="label1" layoutX="60.0" layoutY="27.0" prefHeight="180.0" prefWidth="133.0" stylesheets="@application.css">
+               <children>
+                  <Label id="labelM" prefHeight="17.0" prefWidth="116.0" stylesheets="@application.css" text="Nom de matiére" textFill="#006eb2">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelM" prefHeight="17.0" prefWidth="117.0" stylesheets="@application.css" text="Id de matiére" textFill="#006eb2">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelM" prefHeight="37.0" prefWidth="129.0" stylesheets="@application.css" text="Id de semestre" textFill="#006eb2">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelM" prefHeight="37.0" prefWidth="129.0" stylesheets="@application.css" text="Id de semestre" textFill="#006eb2">
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox id="label1" layoutX="248.0" layoutY="27.0" prefHeight="171.0" prefWidth="198.0" stylesheets="@application.css">
+               <children>
+                  <TextField fx:id="M_NamMatiere" promptText="Saisi le nom de matiére">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="M_IdMatiere" promptText="Saisi le id de matiére">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ComboBox fx:id="M_combIdS" prefHeight="25.0" prefWidth="180.0" promptText="choisir le semstre">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="M_combIdF1" prefHeight="25.0" prefWidth="180.0" promptText="choisir le filiére">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <TableView fx:id="tableMatiere" layoutX="38.0" layoutY="227.0" prefHeight="200.0" prefWidth="460.0">
+              <columns>
+                <TableColumn fx:id="Mcol_nomM" prefWidth="115.0" text="Nom de matiere" />
+                <TableColumn fx:id="M_colidM" prefWidth="120.0" text="id de matiere" />
+                  <TableColumn fx:id="M_colidS" minWidth="3.0" prefWidth="105.0" text="id de semestre" />
+                  <TableColumn fx:id="M_colidF" prefWidth="119.0" text="id de filiere" />
+              </columns>
+            </TableView>
+            <Button id="btn" layoutX="64.0" layoutY="444.0" mnemonicParsing="false" onAction="#AjouterMatiere" prefHeight="31.0" prefWidth="169.0" stylesheets="@application.css" text="Ajouter" />
+            <Button id="btn" layoutX="302.0" layoutY="444.0" mnemonicParsing="false" onAction="#ModifiMatiere" prefHeight="31.0" prefWidth="169.0" stylesheets="@application.css" text="Modifier" />
+            <Label id="img" layoutX="504.0" layoutY="-3.0" onMouseClicked="#invisible" prefHeight="35.0" prefWidth="34.0" stylesheets="@application.css" />
+         </children>
+      </Pane>
+      <Pane id="label" fx:id="paneAffMatiere" layoutX="115.0" layoutY="49.0" prefHeight="483.0" prefWidth="535.0" stylesheets="@application.css" visible="false">
+         <children>
+            <TableView fx:id="tableMatiere1" layoutX="38.0" layoutY="181.0" prefHeight="284.0" prefWidth="460.0">
+               <columns>
+                  <TableColumn fx:id="Mcol_nomM1" prefWidth="115.0" text="Nom de matiere" />
+                  <TableColumn fx:id="M_colidM1" prefWidth="120.0" text="id de matiere" />
+                  <TableColumn fx:id="M_colidS1" minWidth="3.0" prefWidth="105.0" text="id de semestre" />
+                  <TableColumn fx:id="M_colidF1" prefWidth="119.0" text="id de filiere" />
+               </columns>
+            </TableView>
+            <Label id="img" layoutX="504.0" layoutY="-3.0" onMouseClicked="#invisible" prefHeight="35.0" prefWidth="34.0" stylesheets="@application.css" />
+            <Button id="btn" layoutX="160.0" layoutY="107.0" mnemonicParsing="false" onAction="#btnaffMatiere" prefHeight="25.0" prefWidth="224.0" stylesheets="@application.css" text="afficher les matiere">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane id="paneF" fx:id="paneFiliere" layoutX="115.0" layoutY="55.0" prefHeight="483.0" prefWidth="535.0" stylesheets="@application.css" visible="false">
+         <children>
+            <VBox id="paneProf" layoutX="64.0" layoutY="30.0" prefHeight="163.0" prefWidth="149.0" stylesheets="@application.css">
+               <children>
+                  <Label id="labelM" prefHeight="17.0" prefWidth="138.0" stylesheets="@application.css" text="Nom de filiere">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelM" prefHeight="17.0" prefWidth="163.0" stylesheets="@application.css" text="Id de filiere">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label id="labelM" prefHeight="17.0" prefWidth="145.0" stylesheets="@application.css" text="id de responsable">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox id="paneProf" layoutX="268.0" layoutY="40.0" prefHeight="152.0" prefWidth="218.0" stylesheets="@application.css">
+               <children>
+                  <TextField fx:id="F_NomFiliere" promptText="Saisi le nom de filiere">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="F_idFiliere1" promptText="Saisi id de filiere">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ComboBox fx:id="F_idRes" prefHeight="25.0" prefWidth="212.0" promptText="Choisi le id de le responsable">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <TableView fx:id="tableFiliere" layoutX="48.0" layoutY="203.0" prefHeight="200.0" prefWidth="440.0">
+              <columns>
+                <TableColumn fx:id="F_nomFiliere" prefWidth="129.0" text="Nom de filiere" />
+                <TableColumn fx:id="F_idFiliere" prefWidth="149.0" text="id de filiere" />
+                  <TableColumn fx:id="F_idResponsable" prefWidth="161.0" text="id de responsable" />
+              </columns>
+            </TableView>
+            <Button id="btnF" layoutX="84.0" layoutY="416.0" mnemonicParsing="false" onAction="#AjoutFiliere" prefHeight="37.0" prefWidth="149.0" stylesheets="@application.css" text="Ajouter">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="btnF" layoutX="282.0" layoutY="416.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="160.0" stylesheets="@application.css" text="modifier">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label id="img" layoutX="501.0" onMouseClicked="#invisible" prefHeight="35.0" prefWidth="34.0" stylesheets="@application.css" />
+         </children>
+      </Pane>
+      <Button id="btn" fx:id="btnRetour" layoutX="249.0" layoutY="533.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="198.0" stylesheets="@application.css" text="Retour a la page" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Pane id="label" fx:id="paneAffFiliere" layoutX="124.0" layoutY="62.0" prefHeight="483.0" prefWidth="535.0" stylesheets="@application.css" visible="false">
+         <children>
+            <TableView fx:id="tableaffFiliere" layoutX="157.0" layoutY="168.0" prefHeight="284.0" prefWidth="230.0">
+               <columns>
+                  <TableColumn fx:id="col_nom_filiere" prefWidth="115.0" text="Nom de filiere" />
+                  <TableColumn fx:id="col_id_f" prefWidth="120.0" text="id de filiere" />
+               </columns>
+            </TableView>
+            <Label id="img" layoutX="504.0" layoutY="-3.0" onMouseClicked="#invisible" prefHeight="35.0" prefWidth="34.0" stylesheets="@application.css" />
+            <Button id="btn" layoutX="160.0" layoutY="107.0" mnemonicParsing="false" onAction="#btnaffFiliere" prefHeight="25.0" prefWidth="224.0" stylesheets="@application.css" text="afficher les Filiere">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

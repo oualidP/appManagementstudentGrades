@@ -1,0 +1,81 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#background{
+	-fx-background-image:url("file:///C:/Users/HP/eclipse-workspace/gestions_note/src/vecteezy_graduation-hat-with-colorful-pencils-with-copy-space_6406001_762.jpg");
+	-fx-background-size:cover;
+	
+}
+#label{
+	-fx-background-color:rgb(255, 222, 200);
+	-fx-border-radius:20px;
+	
+
+	
+}
+#pane{
+	-fx-border-type:solid;
+	-fx-border-color:rgb(255, 230, 210);
+	-fx-background-color:rgb(255, 222, 173);
+	-fx-border-raduis:15px;
+	
+}
+#label:hover{
+	-fx-background-color:rgb(255, 200, 150);
+}
+#btn{
+	-fx-background-color:rgb(0, 255, 255);
+	-fx-font-weight:bold;
+}
+#btn:hover{
+	-fx-background-color:rgb(0, 230, 230);
+}
+#pane1{
+	-fx-background-color:rgb(128, 128, 255);
+	-fx-border-raduis:15px;
+}
+#label1{
+	-fx-background-color:rgb(128,255,128);
+	-fx-border-raduis:15px;
+}
+#pane2{
+	-fx-background-color:rgb(255,110,110);
+}
+#label2{
+	-fx-background-color:rgb(255,255,0);
+	-fx-border-raduis:15px;
+}
+#img{
+	-fx-background-image:url("file:///C:/Users/HP/eclipse-workspace/gestions_note/src/icons8-macos-fermer-30.png");
+	-fx-background-size:cover;
+	-fx-background-color:rgb(255,255,255);
+}
+#pane3{
+	-fx-background-color:rgb(80,160,160);
+	-fx-border-raduis:15px;
+}
+#paneProf{
+	-fx-background-color:rgb(128, 255, 128);
+	-fx-border-raduis:15px;
+}
+#labelProf{
+	-fx-background-color:rgb(255,0,0);
+	-fx-border-raduis:15px;
+}
+#boxProf{
+	-fx-background-color:rgb(255,255,0);
+	-fx-border-raduis:15px;
+}
+#labelM{
+	-fx-background-color:rgb(255,255,255);
+}
+#paneF{
+	-fx-background-color:rgb(0,255,255);
+	-fx-border-raduis:15px;
+}
+#labelF{
+	-fx-background-color:rgb(255,0,0);
+	-fx-border-raduis:15px;
+}
+#btnF{
+	-fx-background-color:rgb(255, 255, 0);
+	-fx-border-raduis:15px;
+}

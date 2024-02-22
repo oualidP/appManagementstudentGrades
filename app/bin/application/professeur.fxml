@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="paneProf" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.profController">
+   <children>
+      <VBox id="label2" layoutX="168.0" layoutY="44.0" prefHeight="87.0" prefWidth="134.0" stylesheets="@application.css">
+         <children>
+            <Label id="labelM" prefHeight="17.0" prefWidth="174.0" stylesheets="@application.css" text=" Filiere">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label id="labelM" prefHeight="17.0" prefWidth="184.0" stylesheets="@application.css" text=" Matiere">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox id="label2" layoutX="342.0" layoutY="44.0" prefHeight="94.0" prefWidth="175.0" stylesheets="@application.css">
+         <children>
+            <ComboBox fx:id="combFilere" prefWidth="150.0" promptText="Choisi le filiere">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="combMatiere" prefWidth="150.0" promptText="Choisi le matiere">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tableNote" layoutX="102.0" layoutY="213.0" prefHeight="163.0" prefWidth="486.0">
+        <columns>
+          <TableColumn fx:id="colCNE" prefWidth="102.0" text="CNE" />
+          <TableColumn fx:id="colNom" prefWidth="127.0" text="nom de l'etudiant" />
+            <TableColumn fx:id="colMatiere" prefWidth="110.0" text="Matiere" />
+            <TableColumn fx:id="colNote" prefWidth="146.0" text="Note" />
+        </columns>
+      </TableView>
+      <Button id="btn" layoutX="219.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnAff" prefHeight="43.0" prefWidth="193.0" stylesheets="@application.css" text="Afficher les etudiants">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button id="btn" layoutX="115.0" layoutY="411.0" mnemonicParsing="false" onAction="#btnAjoute" prefHeight="37.0" prefWidth="209.0" stylesheets="@application.css" text="Ajoute un note">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textNote" layoutX="371.0" layoutY="411.0" prefHeight="37.0" prefWidth="175.0" promptText="Saisi le note de l'etudiant" />
+      <Button id="btn" fx:id="btnRetour" layoutX="507.0" layoutY="-4.0" mnemonicParsing="false" onAction="#retour" prefHeight="37.0" prefWidth="193.0" stylesheets="@application.css" text="retour a la page premiere" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

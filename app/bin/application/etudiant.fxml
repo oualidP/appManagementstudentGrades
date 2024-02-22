@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.etudiantController">
+   <children>
+      <VBox id="pane" layoutX="33.0" layoutY="65.0" prefHeight="213.0" prefWidth="181.0" stylesheets="@application.css">
+         <children>
+            <Label id="labelM" fx:id="S1" onMouseClicked="#visible_S1" prefHeight="27.0" prefWidth="193.0" stylesheets="@application.css" text="Semestre1">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="40.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label id="labelM" fx:id="S2" onMouseClicked="#visible_2" prefHeight="27.0" prefWidth="180.0" stylesheets="@application.css" text="Semestre2">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="40.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label id="labelM" fx:id="S_3" onMouseClicked="#visible_3" prefHeight="27.0" prefWidth="199.0" stylesheets="@application.css" text="Semestre3">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="40.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label id="labelM" fx:id="S4" onMouseClicked="#visible_4" prefHeight="27.0" prefWidth="198.0" stylesheets="@application.css" text="semestre4">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="40.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label id="labelM" fx:id="S5" onMouseClicked="#visible_5" prefHeight="27.0" prefWidth="182.0" stylesheets="@application.css" text="Semestre5">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="40.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label id="labelM" fx:id="S6" onMouseClicked="#visible_6" prefHeight="27.0" prefWidth="193.0" stylesheets="@application.css" text="Semestre6">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="40.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox id="pane3" fx:id="Semestre1" layoutX="266.0" layoutY="76.0" prefHeight="308.0" prefWidth="341.0" stylesheets="@application.css" visible="false">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere1_s1" prefHeight="31.0" prefWidth="173.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label2" fx:id="Note1_s1" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere2_s1" prefHeight="31.0" prefWidth="174.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label2" fx:id="Note2_s1" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere3_s1" prefHeight="31.0" prefWidth="176.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label2" fx:id="Note3_s1" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere4_s1" prefHeight="31.0" prefWidth="177.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label2" fx:id="Note4_s1" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere5_s1" prefHeight="31.0" prefWidth="177.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label2" fx:id="Note5_s1" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere6_s1" prefHeight="31.0" prefWidth="178.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label2" fx:id="Note6_s1" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere7_s1" prefHeight="31.0" prefWidth="178.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label2" fx:id="Note7_s1" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="pane3" fx:id="Semestre2" layoutX="276.0" layoutY="76.0" prefHeight="308.0" prefWidth="341.0" stylesheets="@application.css" visible="false">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere1_s2" prefHeight="31.0" prefWidth="165.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note1_s2" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere2_s2" prefHeight="31.0" prefWidth="165.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note2_s2" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere3_s2" prefHeight="31.0" prefWidth="166.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note3_s2" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere4_s2" prefHeight="31.0" prefWidth="167.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note4_s2" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere5_s2" prefHeight="31.0" prefWidth="168.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note5_s2" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere6_s2" prefHeight="31.0" prefWidth="169.0">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note6_s2" prefHeight="27.0" prefWidth="125.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere7_s2" prefHeight="31.0" prefWidth="178.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="label2" fx:id="Note7_s2" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="pane3" fx:id="Semestre3" layoutX="276.0" layoutY="76.0" prefHeight="308.0" prefWidth="341.0" stylesheets="@application.css" visible="false">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere1_s3" prefHeight="31.0" prefWidth="169.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note1_s3" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere2_s3" prefHeight="31.0" prefWidth="170.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note2_s3" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere3_s3" prefHeight="31.0" prefWidth="170.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note3_s3" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere4_s3" prefHeight="31.0" prefWidth="170.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note4_s3" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere5_s3" prefHeight="31.0" prefWidth="171.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note5_s3" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere6_s3" prefHeight="31.0" prefWidth="171.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note6_s3" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="pane3" fx:id="Semestre4" layoutX="276.0" layoutY="66.0" prefHeight="308.0" prefWidth="341.0" stylesheets="@application.css" visible="false">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere1_s4" prefHeight="31.0" prefWidth="173.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note1_s4" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere2_s4" prefHeight="31.0" prefWidth="173.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note2_s4" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere3_s4" prefHeight="31.0" prefWidth="173.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note3_s4" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere4_s4" prefHeight="31.0" prefWidth="175.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note4_s4" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere5_s4" prefHeight="31.0" prefWidth="175.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note5_s4" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere6_s4" prefHeight="31.0" prefWidth="177.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note6_s4" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="pane3" fx:id="Semestre5" layoutX="286.0" layoutY="66.0" prefHeight="308.0" prefWidth="341.0" stylesheets="@application.css" visible="false">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere1_s5" prefHeight="31.0" prefWidth="172.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note1_s5" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere2_s5" prefHeight="31.0" prefWidth="172.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note2_s5" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere3_s5" prefHeight="31.0" prefWidth="171.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note3_s5" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere4_s5" prefHeight="31.0" prefWidth="170.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note4_s5" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere5_s5" prefHeight="31.0" prefWidth="169.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note5_s5" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere6_s5" prefHeight="31.0" prefWidth="169.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note6_s5" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="pane3" fx:id="Semestre6" layoutX="286.0" layoutY="76.0" prefHeight="308.0" prefWidth="341.0" stylesheets="@application.css" visible="false">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere1_s6" prefHeight="31.0" prefWidth="168.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note1_s6" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere2_s6" prefHeight="31.0" prefWidth="169.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note2_s6" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere3_s6" prefHeight="31.0" prefWidth="170.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note3_s6" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere4_s6" prefHeight="31.0" prefWidth="173.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note4_s6" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere5_s6" prefHeight="31.0" prefWidth="175.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note5_s6" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="263.0">
+               <children>
+                  <Label id="label2" fx:id="Matiere6_s6" prefHeight="31.0" prefWidth="175.0" stylesheets="@application.css">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="label2" fx:id="Note6_s6" prefHeight="27.0" prefWidth="125.0" stylesheets="@application.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button id="btn" fx:id="btnRetour" layoutX="238.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" prefHeight="39.0" prefWidth="190.0" stylesheets="@application.css" text="retour a la page premiere" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
